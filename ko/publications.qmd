@@ -1,0 +1,7 @@
+---
+title: "Selected Publications"
+---
+
+[전체 목록은 [Google Scholar](https://scholar.google.com/citations?user=UFcXZi0AAAAJ&hl=ko)에서 볼 수 있습니다. 2026년 연구실이 문을 열기 전의 연구도 포함합니다.]{.small-note}
+
+{{< include ../_publications.md >}}

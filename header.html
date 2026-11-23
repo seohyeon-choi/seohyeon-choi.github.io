@@ -1,0 +1,44 @@
+<header id="lab-header">
+  <div class="topline"><span class="lang-switch"><a class="lang-en">EN</a><span>|</span><a class="lang-ko">한국어</a></span></div>
+  <div class="bar">
+    <a class="brand" data-page="index.html">
+      <span class="brand-main">Literacy and Learner Diversity Lab</span>
+      <span class="brand-sub" data-en="Sungkyunkwan University" data-ko="성균관대학교"></span>
+    </a>
+    <nav class="lab-nav">
+      <a data-page="index.html"        data-en="Home"         data-ko="Home"></a>
+      <a data-page="people.html"       data-en="Members"      data-ko="Members"></a>
+      <a data-page="research.html"     data-en="Research"     data-ko="Research"></a>
+      <a data-page="publications.html" data-en="Publications" data-ko="Publications"></a>
+      <a data-page="join.html"         data-en="Join Us"      data-ko="Join Us"></a>
+      <a data-page="contact.html"      data-en="Contact"      data-ko="Contact"></a>
+    </nav>
+  </div>
+</header>
+<script>
+(function () {
+  var path = window.location.pathname;
+  var isKo = /\/ko\/[^\/]*$/.test(path);
+  var file = path.split("/").pop() || "index.html";
+  var base = isKo ? path.replace(/ko\/[^\/]*$/, "") : path.replace(/[^\/]*$/, "");
+  var lang = isKo ? "ko" : "en";
+  var h = document.getElementById("lab-header");
+
+  // 메뉴 바를 페이지 맨 위로 옮김
+  var qc = document.getElementById("quarto-content");
+  if (qc) qc.parentNode.insertBefore(h, qc);
+
+  h.querySelectorAll("[data-page]").forEach(function (a) {
+    var page = a.getAttribute("data-page");
+    a.setAttribute("href", base + (isKo ? "ko/" : "") + page);
+    if (a.parentElement.classList.contains("lab-nav") && page === file) a.classList.add("active");
+  });
+  h.querySelectorAll("[data-en]").forEach(function (el) { el.textContent = el.dataset[lang]; });
+
+  var en = h.querySelector(".lang-en"), ko = h.querySelector(".lang-ko");
+  en.setAttribute("href", base + file);
+  ko.setAttribute("href", base + "ko/" + file);
+  (isKo ? ko : en).classList.add("current");
+  if (file === "index.html") document.body.classList.add("is-home");
+})();
+</script>

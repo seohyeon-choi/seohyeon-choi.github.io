@@ -1,0 +1,7 @@
+---
+title: "Selected Publications"
+---
+
+[For a complete list, please visit [Google Scholar](https://scholar.google.com/citations?user=UFcXZi0AAAAJ&hl=en). Includes work prior to the lab's founding in 2026.]{.small-note}
+
+{{< include _publications.md >}}

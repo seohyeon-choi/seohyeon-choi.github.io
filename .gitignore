@@ -1,0 +1,27 @@
+# Quarto가 만드는 임시 파일
+/.quarto/
+/_site/
+/*_files/
+/ko/*_files/
+
+# RStudio / 시스템 파일
+.Rproj.user
+.Rhistory
+*.Rproj
+.DS_Store
+
+# 내 컴퓨터에만 두는 파일 (GitHub에 올라가지 않음)
+originals/
+*.zip
+*.long-backup
+시작하기_가이드.md
+README.md
+files/README.txt
+lang-switch.html
+images/banner.svg
+images/profile-placeholder.svg
+images/welcome.jpg
+images/snu-80th-web.jpg
+images/KakaoTalk_*
+
+**/*.quarto_ipynb

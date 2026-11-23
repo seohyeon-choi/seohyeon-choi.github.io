@@ -1,0 +1,184 @@
+/*-- scss:defaults --*/
+// 글꼴: 영문 Libre Baskerville / 한글 Noto Sans KR
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
+// 색상 — 이 값만 바꾸면 사이트 전체 색이 바뀝니다
+$lab-bg:     #2f2d2a;  // 기본 배경 (따뜻한 짙은 갈회색)
+$lab-panel:  #3a3733;  // 카드 배경
+$lab-band:   #2f2d2a;  // 홈 About 띠 배경
+$lab-hero:   #2f2d2a;  // 홈 맨 위 배경
+$lab-text:   #e2ddd5;  // 본문 글자
+$lab-strong: #f4f0e9;  // 진한 글자
+$lab-accent: #a9c48f;  // 강조 (올리브 그린) — 제목·링크·메뉴
+$lab-warm:   #de9a74;  // 두 번째 강조색 (테라코타) — 버튼·날짜 등 "행동"에 사용
+$lab-muted:  #a39d94;  // 날짜 등 흐린 글자
+$lab-line:   rgba(255,255,255,.12);
+
+$body-bg: $lab-bg;
+$body-color: $lab-text;
+$link-color: $lab-accent;
+$headings-color: $lab-strong;
+$font-family-sans-serif: "Source Sans 3", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 0.98rem;   // 본문 약 16px
+$line-height-base: 1.85;
+$headings-font-weight: 600;
+$footer-bg: $lab-bg;
+$footer-fg: $lab-muted;
+
+/*-- scss:rules --*/
+$serif: $font-family-sans-serif;   // 제목도 본문과 같은 글꼴
+html, body { overflow-x: hidden; }
+body { word-break: keep-all; overflow-wrap: break-word; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: $lab-strong; font-weight: 600; }
+p, li { max-width: none; }
+
+// 상단 메뉴 바
+#lab-header {
+  position: sticky; top: 0; z-index: 100;
+  background: $lab-bg;
+  .bar { max-width: 1040px; margin: 0 auto; padding: .3rem 1.5rem .9rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .brand { color: $lab-strong; text-decoration: none; display: flex; align-items: baseline; gap: .6rem; }
+  .brand-main { font-family: $serif; font-weight: 600; font-size: 1.12rem; color: $lab-accent; }
+  .brand-sub { font-size: .72rem; font-style: italic; color: $lab-muted; }
+  .lab-nav { display: flex; align-items: center; flex-wrap: wrap; gap: .3rem 1.3rem; }
+  .lab-nav > a { color: $lab-text; font-size: .8rem; white-space: nowrap; padding: .2rem 0; border-bottom: 2px solid transparent; }
+  .lab-nav > a:hover { color: $lab-accent; text-decoration: none; }
+  .lab-nav > a.active { color: $lab-strong; border-bottom: 1px solid $lab-strong; }
+  .topline { max-width: 1040px; margin: 0 auto; padding: .55rem 1.5rem 0; text-align: right; }
+  .lang-switch {
+    display: inline-block; font-family: "Noto Sans KR", sans-serif; font-size: .72rem; color: $lab-muted;
+    border: 1px solid $lab-line; border-radius: 999px; padding: .1rem .75rem;
+    a { color: $lab-muted; } span { margin: 0 .4rem; opacity: .5; }
+    a.current { color: $lab-strong; font-weight: 700; }
+  }
+}
+
+// 본문 폭
+#quarto-content { max-width: 1040px; margin: 0 auto; padding: 0 1.5rem; }
+main.content { padding-top: 0; }
+#title-block-header { margin: 3rem 0 1.4rem; }
+#title-block-header h1.title { font-family: $serif; font-weight: 600; font-size: 1.9rem; color: $lab-accent; }
+h2 { font-family: $serif; font-weight: 600; font-size: 1.45rem; color: $lab-accent; margin: 2.8rem 0 1rem; }
+h3 { font-size: .98rem; font-weight: 700; margin: 1.8rem 0 .6rem; }
+ul { padding-left: 1.2rem; } li { margin-bottom: .45rem; }
+
+// 화면 끝까지 이어지는 띠
+.band, .hero { margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding: 3.4rem calc(50vw - 50%); }
+.band > *:first-child { margin-top: 0; }
+.band-slate { background: $lab-band; padding-top: 1rem; padding-bottom: 1.5rem; }
+.band-panel { background: $lab-panel; }
+
+// 홈 맨 위
+.hero {
+  background: $lab-hero; padding-top: 3.5rem; padding-bottom: 2.5rem;
+  p { margin: 0; }
+  .hero-title { display: block; font-family: $serif; font-weight: 600; font-size: 2.4rem; line-height: 1.2; color: $lab-accent; max-width: 36rem; }
+  .hero-sub { display: block; font-size: .85rem; font-style: italic; color: $lab-text; margin-top: 1rem; }
+  .hero-tag { display: block; font-family: $serif; font-size: 1.1rem; color: $lab-strong; margin-top: 1.8rem; max-width: 32rem; line-height: 1.6; padding-left: 1rem; border-left: 2px solid $lab-accent; }
+}
+@media (max-width: 700px) { .hero .hero-title { font-size: 2.2rem; } }
+.lead { font-family: $serif; font-size: 1.3rem; line-height: 1.5; color: $lab-strong; font-weight: 300; }
+
+// 연구 키워드
+.keywords-label { display: block; font-size: .8rem; font-style: italic; color: $lab-muted; margin: 1.6rem 0 .5rem; }
+.chip { display: inline-block; background: rgba(169,196,143,.15); border-radius: 999px; padding: .22rem .8rem; margin: 0 .4rem .5rem 0; font-size: .78rem; color: #e6efdc; }
+
+// 소식 갤러리
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.6rem 1.4rem; margin-top: 1rem; }
+.news-card {
+  figure, p { margin: 0; }
+  img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; margin-bottom: .7rem; }
+  .post-date { font-size: .75rem; font-style: italic; color: $lab-warm; }
+  strong { display: block; margin: .15rem 0 .3rem; font-size: .95rem; }
+  p:last-child { font-size: .86rem; line-height: 1.6; }
+}
+
+// 함께하기 안내
+.join-box { border-left: 3px solid $lab-accent; padding: .8rem 1.2rem; margin: 2.4rem 0; background: $lab-panel; p { margin: 0; } }
+
+// 구성원
+.person, .member { display: grid; grid-template-columns: 130px 1fr; gap: 1.4rem; align-items: start; margin: 1rem 0; }
+.person img, .member img { width: 100%; }
+.member p { margin-bottom: .15rem; }
+@media (max-width: 600px) { .person, .member { grid-template-columns: 1fr; gap: .8rem; } .person img, .member img { max-width: 120px; } }
+.role { color: $lab-muted; font-size: .88rem; }
+.btn-cv { display: inline-block; border: 1px solid $lab-warm; color: $lab-warm !important; padding: .35rem 1rem; border-radius: 999px; font-size: .85rem; margin-top: .4rem; text-decoration: none !important; }
+.btn-cv:hover { background: $lab-warm; color: #2b2b2b !important; }
+
+// 논문 목록
+.pubs p { padding-left: 1.5em; text-indent: -1.5em; margin-bottom: .75rem; font-size: .88rem; max-width: none; }
+.pubs h3 { font-family: $serif; font-weight: 600; font-size: 1.05rem; color: $lab-muted; }
+
+.small-note { font-size: .85rem; color: $lab-muted; }
+.nav-footer { border-top: 1px solid $lab-line; font-size: .75rem; }
+.is-home #title-block-header { display: none; }
+
+// 한국어 페이지: 한글 고딕을 먼저 쓰고 크기·간격 조정
+html[lang="ko"] body { font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: .93rem; line-height: 1.8; letter-spacing: -0.01em; }
+
+// 홈 소개 (구분 없이 제목 바로 아래 이어짐)
+.intro { margin-top: .5rem; }
+.hero { padding-bottom: 1.2rem; }
+
+// 본문 링크는 색뿐 아니라 밑줄로도 구분 (색각이상 접근성)
+main.content p a, main.content li a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
+// 홈: 모집 안내 배너
+.join-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: .8rem 1.5rem; flex-wrap: wrap;
+  background: rgba(222,154,116,.10); border: 1px solid rgba(222,154,116,.45); border-radius: 6px;
+  padding: 1rem 1.3rem; margin: 1.8rem 0;
+  p { margin: 0; color: $lab-strong; max-width: none; }
+}
+.btn-warm {
+  display: inline-block; background: $lab-warm; color: #2b2b2b !important; padding: .45rem 1.1rem; border-radius: 999px;
+  font-weight: 700; font-size: .85rem; white-space: nowrap; text-decoration: none !important;
+}
+.btn-warm:hover { background: lighten($lab-warm, 8%); }
+
+// 본문을 상단 메뉴와 같은 폭·같은 왼쪽 선에 맞춤
+#quarto-content.page-columns { display: block; }
+#quarto-content main.content { width: auto; margin: 0; }
+
+// 연구 페이지: 연구 주제 카드
+.theme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; margin: 1rem 0 .5rem; }
+.theme-card {
+  background: $lab-panel; border-top: 3px solid $lab-accent; border-radius: 6px; padding: 1.1rem 1.3rem 1rem;
+  h4 { font-family: $serif; font-weight: 600; font-size: 1.02rem; line-height: 1.4; color: $lab-strong; margin: .25rem 0 .6rem; }
+  p { font-size: .86rem; }
+  p:has(.ex-label) { font-size: .8rem; color: $lab-muted; border-top: 1px solid $lab-line; padding-top: .7rem; margin: .8rem 0 0; }
+}
+.theme-num { font-size: .75rem; font-weight: 700; letter-spacing: .08em; color: $lab-accent; }
+.ex-label { color: $lab-warm; font-style: italic; font-weight: 600; }
+
+// 연구 방법 카드
+.method-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.method-card {
+  border: 1px solid $lab-line; border-radius: 6px; padding: 1rem 1.1rem;
+  h4 { font-family: $serif; font-weight: 600; font-size: .92rem; color: $lab-warm; margin: 0 0 .45rem; }
+  p { font-size: .84rem; margin: 0; }
+  ul { padding-left: 1.1rem; margin: 0; font-size: .84rem; }
+  li { margin-bottom: .2rem; }
+}
+
+// 진행 중인 프로젝트
+.project-list ul { list-style: none; padding-left: 0; }
+.project-list li { border-left: 3px solid $lab-warm; background: rgba(255,255,255,.03); padding: .6rem .9rem .6rem 1rem; margin-bottom: .8rem; border-radius: 0 4px 4px 0; }
+
+/* News 분류 표시 (Member, Talk, Paper, Award 등) */
+.news-tag {
+  display: inline-block; font-size: .7rem; letter-spacing: .06em; text-transform: uppercase;
+  color: $lab-accent; border: 1px solid rgba(169,196,143,.5); border-radius: 999px;
+  padding: .05rem .55rem; margin-right: .45rem; vertical-align: .1em;
+}
+
+/* Join Us 모집 박스 (모집이 없을 때는 join.qmd에서 ::: {.openings} 블록을 지우면 됩니다) */
+.openings {
+  border: 1px solid $lab-warm; border-radius: 10px; background: $lab-panel;
+  padding: 1.1rem 1.4rem .9rem; margin: 1.8rem 0 2.4rem;
+  h2 { margin: 0 0 .7rem; color: $lab-warm; font-size: 1.2rem; }
+  ul { margin-bottom: .6rem; }
+  p { font-size: .88rem; color: $lab-muted; margin: 0; }
+}

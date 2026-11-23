@@ -1,0 +1,97 @@
+---
+title: "Research"
+---
+
+We focus on children with learning disabilities or difficulties, multilingual learners, and underserved populations, while taking a needs-based rather than category-based perspective. We recognize that socially constructed labels can draw attention to important needs, but that they are not fixed, rarely capture the full range of a child's needs, and can sometimes draw attention away from a child's strengths. We also recognize that some children have clear needs yet fit none of the categories currently in use. Across our work, we try to look beyond whether an approach works, or how skills are related, *on average*. We ask *for whom* and *under what conditions* an approach works, and we are especially interested in how these relations *differ* across subgroups and across individual children. Because the most difficult problems in education are hard to solve with a single perspective, method, or disciplinary training, we value interdisciplinary, team-based research. We also strive to learn from and collaborate with teachers, parents, policymakers, and others who shape children's lives so that our research can truly reach children and make a meaningful difference.
+
+## Research Themes
+
+::: {.theme-grid}
+
+::: {.theme-card}
+[01]{.theme-num}
+
+#### Data-based individualization for children with intensive literacy needs
+
+No single program works for every child. Standardized, evidence-based interventions help most children, but for a small proportion of children they are not sufficient. How can teachers use progress-monitoring data to adapt instruction for children with the most intensive learning needs, such as those with learning disabilities? We examine how instructional changes made through data-based individualization (DBI) shape children's growth, which children benefit most, and what supports teachers need to implement DBI well.
+
+[Examples:]{.ex-label} effects of teachers' data-based instructional changes on early writing growth in a randomized controlled trial; latent writing profiles and their links to intervention response; implementation drivers of DBI.
+:::
+
+::: {.theme-card}
+[02]{.theme-num}
+
+#### Fair and instructionally useful literacy assessment
+
+Good decisions require good data. We develop and validate screening, progress-monitoring, and diagnostic measures, and test whether they function fairly for children from different language and disability backgrounds.
+
+[Examples:]{.ex-label} measurement invariance and differential item functioning of writing curriculum-based measures for multilingual learners; how scoring methods (e.g., partial-credit letter sequences) affect fairness; assessing teachers' DBI knowledge and skills.
+:::
+
+::: {.theme-card}
+[03]{.theme-num}
+
+#### Early language comprehension and inference-making
+
+Many late-emerging reading comprehension difficulties stem from language comprehension rather than decoding. We study how to support language comprehension in young children who are not yet reading independently, particularly through video and emerging technologies. Drawing on educational psychology and cognitive science, we examine how children build meaning, make inferences, and learn, with the goal of informing the design of effective programs.
+
+[Examples:]{.ex-label} how child characteristics (oral language, background knowledge) and media features (genre, language complexity, modality, audiovisual cohesion) jointly shape kindergartners' inference-making; children's help-seeking and scaffolding in a web-based inference program.
+:::
+
+::: {.theme-card}
+[04]{.theme-num}
+
+#### Literacy development across diverse learners and contexts
+
+We study how children develop complex, higher-order skills such as reading comprehension over time, building on foundational skills. We also examine how these trajectories, and the support children need, differ by linguistic and cultural background, disability characteristics, and home literacy environments, and how teachers, schools, and communities can support children along the way, taking emerging AI environments into account.
+
+[Examples:]{.ex-label} reading growth from kindergarten to grade 5 by language and disability status using ECLS-K:2011; foundational reading-skill profiles of Spanish–English bilingual children; the role of metacognition in early reading development using German panel data (NEPS).
+:::
+
+:::
+
+## How We Work
+
+::: {.method-grid}
+
+::: {.method-card}
+#### Designs
+
+- Randomized controlled trials and experiments
+- Longitudinal studies
+- Assessment development and validation
+- Think-aloud and process-focused studies
+- Secondary analysis of large-scale data
+:::
+
+::: {.method-card}
+#### Data
+
+- Assessment performance
+- Item-level responses
+- Response times and digital logs
+- Verbal and observational data
+- Teacher implementation data
+:::
+
+::: {.method-card}
+#### Methods
+
+- Mixed-effects (multilevel) models
+- Nonlinear longitudinal analysis
+- Structural equation modeling
+- Latent profile analysis
+- Item response theory–based models
+- Measurement invariance analysis
+:::
+
+:::
+
+## Active Projects
+
+
+::: {.project-list}
+- **Think-aloud study** — how young children build meaning as they watch videos and fill in gaps through inference, identifying individual and subgroup differences in this process to inform individualized support
+- **Diagnostic inference assessment** — informed by the think-aloud study, developing and validating a video-based assessment whose answer choices reveal different sources of difficulty, to inform how to better support each child
+- **Home literacy, media, and AI environments** — Young children today are growing up with AI, yet research on their AI use lags behind that on adolescents and adults. We examine how the home literacy, digital, and AI environments of 5- to 8-year-olds in Korea vary across families, how they relate to language and literacy development, and which children may be more vulnerable when learning with AI
+:::

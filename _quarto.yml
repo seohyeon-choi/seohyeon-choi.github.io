@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "ko/*.qmd"
+  resources:
+    - files/*.pdf
+
+website:
+  title: "Literacy and Learner Diversity Lab"
+  description: "Literacy and Learner Diversity Lab · Sungkyunkwan University"
+  favicon: images/favicon.svg
+  search: false
+  page-navigation: false
+  # 메뉴는 header.html에 있습니다 (영·한 메뉴 이름도 거기서 바꿉니다)
+  page-footer:
+    center: "© 2026 Literacy and Learner Diversity Lab · Seohyeon Choi · Sungkyunkwan University"
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    lang: en
+    toc: false
+    page-layout: full
+    include-before-body: header.html
