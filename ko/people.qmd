@@ -16,7 +16,7 @@ title: "Members"
 
 아동의 문해 발달과 개인차, 문해 측정·평가 도구의 측정학적 적합성과 공정성, 그리고 집중·개별화 중재와 데이터 기반 의사결정을 포함한 다층적 지원체계를 연구합니다. 연구에서는 종단 자료 분석을 위한 혼합효과모형, 구조방정식모형, 잠재프로파일분석 같은 개인 중심 접근, 문항반응이론(IRT) 기반 모형 등 양적 방법을 주로 활용합니다.
 
-*School Psychology* 편집위원과 한국학습장애학회 이사로 활동하고 있으며, *Journal of Educational Psychology*, *Journal of Learning Disabilities*, *Learning and Individual Differences*, *Reading and Writing*, *Assessing Writing* 등 여러 학술지의 심사위원으로 꾸준히 참여하고 있습니다.
+*Learning and Individual Differences*와 *School Psychology* 편집위원, 한국학습장애학회 이사로 활동하고 있으며, *Journal of Educational Psychology*, *Journal of Learning Disabilities*, *Reading and Writing*, *Assessing Writing* 등 여러 학술지의 심사위원으로 꾸준히 참여하고 있습니다.
 
 [CV 다운로드 (PDF)](../files/choiS_CV.pdf){.btn-cv download="choiS_CV.pdf"}
 :::
